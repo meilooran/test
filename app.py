@@ -6,8 +6,8 @@ computer_wins = 0
 options = ["камень", "бумага", "ножницы"]
 
 while True:
-    user_input = input("Выбери Камень/Бумага/Ножницы или В для выхода: ").lower()
-    if user_input == "d":
+    user_input = input("Выбери Камень/Бумага/Ножницы или 0 для выхода: ").lower()
+    if user_input == "0":
         break
 
     if user_input not in options:
@@ -19,33 +19,32 @@ while True:
     print("Компьютер выбрал", computer_pick + ".")
 
     if user_input == "камень" and computer_pick == "ножницы":
-        print("You won!")
+        print("Ты выиграл!")
         user_wins += 1
 
     elif user_input == "ножницы" and computer_pick == "камень":
-        print("You lost!")
+        print("Ты проиграл!")
         computer_wins += 1
 
     elif user_input == "бумага" and computer_pick == "камень":
-        print("You won!")
+        print("Ты выиграл!")
         user_wins += 1
 
     elif user_input == "камень" and computer_pick == "бумага":
-        print("You lost!")
+        print("Ты проиграл!")
         computer_wins += 1
 
     elif user_input == "ножницы" and computer_pick == "бумага":
-        print("You won!")
+        print("Ты выиграл!")
         user_wins += 1
 
     elif user_input == "бумага" and computer_pick == "ножницы":
-        print("You lost!")
+        print("Ты проиграл!")
         computer_wins += 1
 
     else:
         print("Ничья")
 
 
-print("You won", user_wins, "times.")
-print("The computer won", computer_wins, "times.")
-print("Goodbye!")
+print("Ты выиграл", user_wins, "раз.")
+print("Компьютер выиграл", computer_wins, "раз.")
