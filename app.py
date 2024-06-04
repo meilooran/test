@@ -6,7 +6,7 @@ computer_wins = 0
 options = ["камень", "бумага", "ножницы"]
 
 while True:
-    user_input = input("Выбери Камень/Бумага/Ножницы или 0 для выхода: ").lower()
+    user_input = input("Выбери Кам./Бум./Нож. или 0 для выхода: ").lower()
     if user_input == "0":
         break
 
