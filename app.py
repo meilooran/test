@@ -45,6 +45,5 @@ while True:
     else:
         print("Ничья")
 
-
 print("Ты выиграл", user_wins, "раз.")
 print("Компьютер выиграл", computer_wins, "раз.")
