@@ -1,10 +1,14 @@
-name: Flake8 Check
+name: Flake8 Check and Deploy
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
-jobs: 
+jobs:
   flake8-check:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
